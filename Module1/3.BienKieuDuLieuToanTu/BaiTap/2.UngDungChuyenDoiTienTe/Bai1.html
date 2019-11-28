@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen Doi Tien Te</title>
+</head>
+<body>
+<h4>Transfer System</h4>
+Amout <input type="number" name="Amout" id="a1">
+From Currency <select id="op1">
+    <option value="vn">VND</option>
+    <option value="us">USD</option>
+</select>
+To Currency
+<select id="op2">
+    <option value="vn" >VND</option>
+    <option value="us">USD</option>
+</select>
+<button onclick="b()">Convert</button>
+<p id="a"></p>
+<p id="q"></p>
+<script>
+    function b() {
+        let op = document.getElementById("op1").value;
+        let opt = document.getElementById("op2").value;
+        let money = document.getElementById("a1").value * 1;
+        if (op === "vn" && opt==="us") {
+            let z = money * 23000;
+            document.getElementById("a").innerHTML = "Result : " + z;
+        } else if (op==="us" && opt==="vn") {
+            let z = 23000 / money;
+            document.getElementById("a").innerHTML = "Result : " + z;
+        } else {
+            document.getElementById("a").innerHTML = "Result : " + money;
+        }
+    }
+</script>
+</body>
+</html>

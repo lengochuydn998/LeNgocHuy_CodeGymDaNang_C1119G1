@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id = "number1"/>
+<input type="text" id = "number2"/>
+<input type="button" onclick="cacular('+')" value="+"/>
+<input type="button" onclick="cacular('-')" value="-"/>
+<input type="button" onclick="cacular('*')" value="*"/>
+<input type="button" onclick="cacular('/')" value="/"/>
+<input type="button" onclick="cacular('=')" value="="/>
+<div id = "total"></div>
+<script>
+
+    var number1 = document.getElementById("number1");
+    var number2 = document.getElementById("number2");
+    function cacular(e)
+    {
+        document.getElementById("total").innerText= eval(number1.value + e + number2.value);
+    }
+
+
+</script>
+</body>
+</html>

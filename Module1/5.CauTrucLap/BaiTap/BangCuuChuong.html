@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bang Cuu Chuong</title>
+</head>
+<body>
+<script>
+    var ketQua = "<table border=\"1px\">";
+    for (var dong = 1; dong <= 9; dong++) {
+        ketQua += "<tr>";
+        for (var cot = 2; cot <= 9; cot++) {
+            var o = cot + " x " + dong + " = " + (cot * dong);
+            ketQua += "<td>" +o + "</td>";
+        }
+        ketQua += "</tr>";
+    }
+    ketQua += "</table>";
+    document.write(ketQua);
+
+</script>
+</body>
+</html>

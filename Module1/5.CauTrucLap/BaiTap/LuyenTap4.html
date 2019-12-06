@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var fist = 0 ;
+    var second = 1 ;
+    var result = 0 ;
+    for (var i= 2;;i++){
+        result = fist + second;
+        if(result%5===0) {
+            alert(result)
+        break;
+        }
+        fist = second;
+        second = result;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lt5</title>
+</head>
+<body>
+<script>
+    var first = 0;
+    var second= 1;
+    var result = 0;
+    var sum=1;
+
+    for(i=2;i<5;i++){
+        result = first + second;
+        first = second;
+        second = result;
+        sum += result;
+    }
+    document.write(sum);
+</script>
+</body>
+</html>

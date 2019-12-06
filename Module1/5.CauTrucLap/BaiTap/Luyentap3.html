@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var n = parseInt(prompt("Nhap So :"));
+    var fist = 0 ;
+    var second = 1 ;
+    var result = 0 ;
+    document.write("0"+ "<br>"+ "1"+"<br>");
+    for (var i= 3; i<=n;i++){
+        result = fist + second;
+        fist = second;
+        second = result;
+        document.write(result+ "<br>");
+    }
+</script>
+</body>
+</html>

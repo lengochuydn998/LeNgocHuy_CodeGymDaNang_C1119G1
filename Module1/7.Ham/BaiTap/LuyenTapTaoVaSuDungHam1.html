@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen Tap</title>
+</head>
+<body>
+<!--Bai 1-->
+<!--<script>-->
+<!--    function alertMessage() {-->
+<!--        alert("Xin Chaoo")-->
+<!--    }-->
+<!--alertMessage()-->
+<!--</script>-->
+<!--Bai2-->
+<!--<input type="text" placeholder="Input Number" id="bai2">-->
+<!--<button onclick="change()">Click</button>-->
+<!--<script>-->
+<!--function change() {-->
+<!--    var a = document.getElementById("bai2").value;-->
+<!--    a++-->
+<!--    alert(a);-->
+<!--}-->
+<!--</script>-->
+<!--Bai 3-->
+<!--<script>-->
+<!--    var a = parseInt(prompt("Input a"));-->
+<!--    var b = parseInt(prompt("Input b"));-->
+<!--    soSanh(a,b);-->
+<!--    function soSanh(a,b) {-->
+<!--        if (a>b){-->
+<!--            alert("A Lớn Hơn B");-->
+<!--        }-->
+<!--        else{-->
+<!--            sum = a + b;-->
+<!--            alert("Tong 2 so a va b ="+sum);-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--bai4-->
+<!--<script>-->
+<!--    function addNumbers() {-->
+<!--        firstNum = 4;-->
+<!--        secondNum = 8;-->
+<!--        result = firstNum + secondNum;-->
+<!--        return result;-->
+<!--    }-->
+<!--    result = 0;-->
+<!--    alert(result);-->
+<!--    result = addNumbers();-->
+<!--    alert(result);-->
+<!--</script>-->
+<!--Bai5-->
+<input id="star" placeholder="Enter star name">
+<input type='button' value='Find constellation' onclick='findStar()'>
+<p id="result"></p>
+<script>
+    var stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe ", "Regulus"];
+    var constellation = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+    function findStar() {
+        var star = document.getElementById("star");
+        var indexStar = stars.indexOf(star.value);
+        var result = document.getElementById("result");
+        if (indexStar !== -1) {
+            result.innerText = constellation[indexStar];
+        }
+        else {
+            alert("Không có tên ngôi sao bạn nhập!");
+        }
+    }
+</script>
+</body>
+</html>

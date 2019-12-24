@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    var temperature = function (c,f,k) {
+        this.c = c;
+        this.chuyenDoi = function () {
+            return (this.c + "Độ C = " + (this.c * 1.8 + 32) + "độ F\n" + this.c + "độ C = " + (this.c + 273.15) + "Độ K")
+        };
+    };
+    var tem = new temperature(25);
+    alert(tem.chuyenDoi())
+</script>
+</body>
+</html>

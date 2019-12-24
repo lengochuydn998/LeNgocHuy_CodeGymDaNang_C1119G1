@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arrInput = prompt("Nhap Vao Bat Cu Thu Gi : ")
+    for(let i =0;i<arrInput.length;i++){
+        if(arrInput[i]===arrInput[i].toUpperCase()){
+            arr.push(arrInput[i].toLowerCase())
+        }
+        else{
+            arr.push(arrInput[i].toUpperCase())
+        }
+    }
+    document.write(arr.join(""))
+</script>
+</body>
+</html>

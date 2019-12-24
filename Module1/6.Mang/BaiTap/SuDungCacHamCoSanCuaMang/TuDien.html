@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TuDien</title>
+</head>
+<body>
+<input placeholder="English" id = "en">
+<button onclick="dich()">Click</button>
+<input placeholder="VietNamese" id="vn">
+<script>
+    let en = ["hello","play","study"];
+    let vn = ["Xin chào","Chơi","Học"];
+    let nhap = document.getElementById("en");
+    function dich() {
+        for(let i=0;i<en.length;i++){
+            if(nhap.value===en[i]){
+                document.getElementById("vn").value=vn[i];
+            }
+        }
+    }
+</script>
+</body>
+</html>

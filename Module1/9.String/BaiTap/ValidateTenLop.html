@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkTenLop(str) {
+        let regexp = /^[CAP]\d{4}[GHIKLM]$/;
+        if(regexp.test(str)){
+            alert("Ten Dung")
+        }
+        else
+            alert("Ten Sai")
+    }
+    checkTenLop(prompt())
+</script>
+</body>
+</html>

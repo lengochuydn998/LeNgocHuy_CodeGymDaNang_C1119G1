@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ElectricLamp = function () {
+        this.setStatus = function (status) {
+            this.status = status;
+        };
+        this.getStatus = function () {
+            return this.status
+        };
+        this.turnOn = function () {
+            this.turnOn = true;
+        };
+        this.turnOff = function () {
+            this.turnOff = false;
+        }
+    };
+    let SwitchButoon = function () {
+        this.switchOff = function (bd) {
+           bd.turnOff();
+            // document.write("Bong Den Dang Tat")
+        };
+        this.switchOn = function (bd) {
+            bd.turnOn();
+            // document.write("Bong Den Dang Mo")
+        };
+    };
+    let electricLamp = new ElectricLamp();
+    let switchButton = new SwitchButoon();
+    switchButton.switchOff(electricLamp);
+    switchButton.switchOn(electricLamp);
+</script>
+</body>
+</html>

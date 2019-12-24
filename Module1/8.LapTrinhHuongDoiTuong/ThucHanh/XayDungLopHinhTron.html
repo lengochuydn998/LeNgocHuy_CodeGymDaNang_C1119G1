@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LopHinhTron</title>
+</head>
+<body>
+<script>
+    var hinhTron  = function (banKinh) {
+        this.banKinh = banKinh;
+        this.getDienTich = function () {
+            return "BanKinh = "+this.banKinh+"\nDienTich = "+this.banKinh*this.banKinh*Math.PI;
+        };
+    };
+    var show = new hinhTron(prompt("Nhap 1 số Đẹp Trai vào"));
+    alert(show.getDienTich());
+</script>
+</body>
+</html>

@@ -1,23 +1,25 @@
 package NgonNguJava.ThucHanh;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class TimGiaTriTrongMang {
     public static void main(String[] args) {
-        String[] studens = {"Christian", "Michael", "Camila", "Sienna", "Tanya",
-                "Connor", "Zachariah", "Mallory", "Zoe", "Emily"};
+        String[] students = {"huy","quy","viet","trieu","hung"};
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a name's studen: ");
+        System.out.print("Nhap 1 ten hoc sinh");
         String input_name = scanner.nextLine();
-        boolean isExist = false;
-        for (int i=0;i<studens.length;i++){
-            if(studens[i].equals(input_name)){
-                System.out.println("Position of the students in the list "+input_name+" is "+(i+1));
-                isExist = true;
+        boolean flag = false;
+        for (int i = 0; i <students.length ; i++) {
+            if(input_name.equals(students[i])){
+                System.out.println("Vi tri cua sinh vien trong mang "+input_name+" la"+(i+1));
+                flag = true;
                 break;
             }
         }
-        if(!isExist)
-            System.out.println("Not found"+input_name+" in the list");
+        if(!flag){
+            System.out.println("khong tim thay sinh vien"+input_name+"trong mang");
+        }
     }
 }

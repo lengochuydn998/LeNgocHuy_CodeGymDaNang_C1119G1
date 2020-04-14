@@ -28,12 +28,12 @@ public class TimGiaTriLonNhatTrongMang {
         }
         int max = arr[0];
         int index = 1;
-        for (int j = 0; j <arr.length ; j++) {
+        for (int j = 1; j <arr.length ; j++) {
             if(arr[j]>max){
                 max = arr[j];
                 index = j+1;
             }
         }
-        System.out.println("gia tri lon nhat la "+max +"tai vi tri"+ index);
+        System.out.println("gia tri lon nhat la "+max +" tai vi tri"+ index);
     }
 }

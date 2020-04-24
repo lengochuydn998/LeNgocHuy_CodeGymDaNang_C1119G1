@@ -24,7 +24,7 @@ public class StopWatch {
     }
 
     public int getElapsedTime() {
-        return Duration.between(this.endTime, this.startTime).toMillisPart();
+        return (int) Duration.between(this.endTime, this.startTime).toMillis();
     }
 
     public static void main(String[] args) {

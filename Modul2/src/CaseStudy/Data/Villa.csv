@@ -1,0 +1,5 @@
+"id","serviceName","areaUsed","rentalCosts","maxNumberOfPeople","rentType","roomStandard","convenientDescription","areaPool","numberOfFloors"
+"1","2","3.0","4.0","5","6","7","10","8.0","9"
+"SVVL-1243","HUY","40.0","40.0","1","VIp","Vip","","40.0","40"
+"SVVL-1234","Vip","40.0","40.0","19","Vip","Vip","","42.0","100"
+"SVVL-1234","Vip","31.0","500.0","19","Vip","Vip","","41.0","41"

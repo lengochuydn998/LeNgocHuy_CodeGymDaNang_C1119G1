@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="HienThiDanhSach:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f897b66-b2a2-437e-adee-9a03ccb3a423" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../1.TongQuanUngDungWed/ThucHanh/ServertTime/src/ServerTimeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.TongQuanUngDungWed/ThucHanh/SimpleDistionary/src/SimpleDictionaryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.TongQuanUngDungWed/ThucHanh/Simple_Login/src/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiTap/SimpleCalcurlator/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiTap/SimpleCalcurlator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiTap/SimpleCalcurlator/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiTap/SimpleCalcurlator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiTap/SimpleCalcurlator/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiTap/tinhtoan/src/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiTap/tinhtoan/src/CalculatorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/CustomerException/BirthdayException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/CustomerException/EmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/CustomerException/GenderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/CustomerException/IdCardException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/CustomerException/NameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Data/Customer.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Models/SortNameAndYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/src/interfaceColorable/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/src/interfaceColorable/Colorable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/src/interfaceColorable/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/src/interfaceColorable/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/src/interfaceColorable/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/src/interfaceColorable/Square.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../JavaWeb/TongQuan/untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Commons/FunValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Commons/FunValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Commons/FuncGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Commons/FuncGeneric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Commons/FuncWriteAndReadFileCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Commons/FuncWriteAndReadFileCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Modul2/src/CaseStudy/Controllers/CustomerController.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\CodeGym\JavWebb\2.JSP-JSTL\ThucHanh\HienThiDanhSach\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/../../BaiTap/SimpleCalcurlator/.idea/SimpleCalcurlator.iml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bkq9p5xYRyJeT3WORa1644DqBW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BaiTap/HienThiDanhSach" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="HienThiDanhSach:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_30_HienThiDanhSach" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57693" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="HienThiDanhSach:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f897b66-b2a2-437e-adee-9a03ccb3a423" name="Default Changelist" comment="" />
+      <created>1589186290855</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589186290855</updated>
+      <workItem from="1589186294855" duration="5724000" />
+      <workItem from="1589247560811" duration="115000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

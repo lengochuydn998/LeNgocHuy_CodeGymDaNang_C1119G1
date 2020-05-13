@@ -1,5 +1,6 @@
 package CaseStudy.Commons;
 
+import CaseStudy.Models.Customer;
 import CaseStudy.Models.House;
 import CaseStudy.Models.Room;
 import CaseStudy.Models.Villa;
@@ -97,5 +98,22 @@ public class FuncWriteAndReadFileCSV {
             System.out.println(e.getMessage());
         }
     }
-
+    //function write customer to csv
+    public static void writeCustomerToFileCsv(ArrayList<Customer> arrayList){
+        try (Writer writer = new FileWriter(pathCustomer);
+             CSVWriter csvWriter = new CSVWriter(writer,
+                     CSVWriter.DEFAULT_SEPARATOR,
+                     CSVWriter.DEFAULT_QUOTE_CHARACTER,
+                     CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+                     CSVWriter.DEFAULT_LINE_END);){
+            csvWriter.writeNext(headerRecordHouse);
+            for (Customer customer :arrayList){
+                csvWriter.writeNext(new String[]
+                        {customer.getFullName(),customer.getBirthday(),customer.getGender(),String.valueOf(customer.getIdCard()),String.valueOf(customer.getPhone()),
+                                customer.getEmail(),customer.getCustomerType(),customer.getAddress(),customer.getServices()});
+            }
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
+    }
 }

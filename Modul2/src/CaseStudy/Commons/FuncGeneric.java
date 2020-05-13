@@ -1,5 +1,6 @@
 package CaseStudy.Commons;
 
+import CaseStudy.Models.Customer;
 import CaseStudy.Models.House;
 import CaseStudy.Models.Room;
 import CaseStudy.Models.Villa;
@@ -38,9 +39,9 @@ public class FuncGeneric {
             else if (item instanceof Room){
                 ((Room) item).showInfo();
             }
-//            else if (item instanceof Customer){
-//                ((Customer) item).showInfo();
-//            }
+            else if (item instanceof Customer){
+                ((Customer) item).showInfo();
+            }
 //            else if (item instanceof Employee) {
 //                System.out.println(((Emplpyee) item));
 //            }
@@ -94,7 +95,7 @@ public class FuncGeneric {
             case ROOM:
                 strategy.setType((Class<? extends E>) Room.class);
             case CUSTOMER:
-//                strategy.setType((Class<? extends E>) Customer.class);
+                strategy.setType((Class<? extends E>) Customer.class);
                 break;
             case EMPLOYEE:
 //                strategy.setType((Class<? extends E>) Employee.class);

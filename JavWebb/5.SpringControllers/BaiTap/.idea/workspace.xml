@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85e30711-3e2a-4fbf-9afb-5517c2bc0e64" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../4.SpringMVC/BaiTap/Bai1/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.SpringMVC/BaiTap/Bai1/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.SpringMVC/BaiTap/TuDienDonGian/src/controllers/DictionaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.SpringMVC/BaiTap/TuDienDonGian/src/service/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.SpringMVC/BaiTap/TuDienDonGian/src/service/serciveImpl/DictionaryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.SpringMVC/BaiTap/TuDienDonGian/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.SpringMVC/BaiTap/TuDienDonGian/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.SpringMVC/BaiTap/TuDienDonGian/web/WEB-INF/views/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/.idea/artifacts/KiemTraEmailMaven_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/KiemTraEmailMaven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/src/main/java/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/src/main/webapp/WEB-INF/configs/web-validate-spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraEmailMaven/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/src/com/codegym/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/src/com/codegym/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/src/com/codegym/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/src/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/web/WEB-INF/views/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/web/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/UngDungLogin/web/WEB-INF/views/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungmaytinh/src/service/CalculateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungmaytinh/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UngDungmaytinh/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/SimpleCalcurlator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/SimpleCalcurlator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/tinhtoan/out/artifacts/tinhtoan_war_exploded/WEB-INF/classes/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/tinhtoan/out/artifacts/tinhtoan_war_exploded/WEB-INF/classes/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/tinhtoan/out/artifacts/tinhtoan_war_exploded/WEB-INF/classes/CalculatorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/tinhtoan/out/artifacts/tinhtoan_war_exploded/WEB-INF/classes/CalculatorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/tinhtoan/out/production/tinhtoan/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/tinhtoan/out/production/tinhtoan/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/tinhtoan/out/production/tinhtoan/CalculatorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.JSP-JSTL/BaiTap/tinhtoan/out/production/tinhtoan/CalculatorServlet.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\CodeGym\JavWebb\5.SpringControllers\BaiTap\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1bvMLwewj9MeLyhiXqfrSB7MZFy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85e30711-3e2a-4fbf-9afb-5517c2bc0e64" name="Default Changelist" comment="" />
+      <created>1589508061774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589508061774</updated>
+      <workItem from="1589508065062" duration="615000" />
+      <workItem from="1589514969405" duration="83000" />
+      <workItem from="1589527176222" duration="233000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

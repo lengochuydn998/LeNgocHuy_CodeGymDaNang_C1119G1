@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<center>
+<h3>Add Service</h3>
+<p>
+    <a th:href="@{/services}">
+        <h2><input type="submit" value="Back to service list"></h2>
+    </a>
+</p>
+<div id="form">
+    <form action="#" th:action="@{/service/save}" th:object="${service}"
+          method="POST">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name Service:</label>
+            <input type="text" th:field="*{nameService}"/>
+            <td th:if="${#fields.hasErrors('nameService')}" th:errors="*{nameService}">Name Error</td>
+        </div>
+        <div>
+            <label>Area:</label>
+            <input type="text" th:field="*{areService}"/>
+            <td th:if="${#fields.hasErrors('areService')}" th:errors="*{areService}">Area Service Error</td>
+        </div>
+        <div>
+            <label>NumberOfFloors:</label>
+            <input type="text" th:field="*{numberOfFloors}"/>
+            <td th:if="${#fields.hasErrors('numberOfFloors')}" th:errors="*{numberOfFloors}">Number Error</td>
+
+        </div>
+        <div>
+            <label>NumberOfPeople:</label>
+            <input type="text" th:field="*{numberMaxOfPeoples}"/>
+            <td th:if="${#fields.hasErrors('numberMaxOfPeoples')}" th:errors="*{numberMaxOfPeoples}">Number Error</td>
+
+        </div>
+        <div>
+            <label>Price:</label>
+            <input type="text" th:field="*{priceRent}"/>
+            <td th:if="${#fields.hasErrors('priceRent')}" th:errors="*{priceRent}">Price Error</td>
+        </div>
+        <div>
+            <label>Status:</label>
+            <input type="text" th:field="*{status}"/>
+            <td th:if="${#fields.hasErrors('status')}" th:errors="*{status}">Status Error</td>
+
+        </div>
+        <div>
+            <label>Type Rent:</label>
+            <select th:field="*{typeRent}">
+                <option th:each="type:${listTypeRent}"
+                        th:value="${type.id}" th:text="${type.nameTypeRent}"
+                ></option>
+            </select>
+        </div>
+        <div>
+            <label>Type Service:</label>
+            <select th:field="*{typeService}">
+                <option th:each="type:${listTypeService}"
+                        th:value="${type.id}" th:text="${type.nameTypeService}"
+                ></option>
+            </select>
+        </div>
+        <input type="submit" value="Save"></input>
+    </form>
+</div>
+<footer th:replace="/customer/layout :: footer"></footer>
+</center>
+</body>
+</html>

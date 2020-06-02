@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<h3>Customer Using List</h3>
+<p>
+    <a th:href="@{/contracts}"><h1><input type="submit" value="Contact List"></h1></a>
+</p>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Name Customer</th>
+        <th>Birthday</th>
+        <th>Id Card</th>
+        <th>Number Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Type</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${cusUsing}">
+        <td th:text="${row.nameCustomer}"></td>
+        <!--        <td th:text="${row.birthday}"></td>-->
+        <td th:text="${row.birthday}"></td>
+        <td th:text="${row.idCard}"></td>
+        <td th:text="${row.numberPhone}"></td>
+        <td th:text="${row.email}"></td>
+        <td th:text="${row.address}"></td>
+        <td th:text="${row.typeCustomer.nameTypeCustomer}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+<footer th:replace="/customer/layout :: footer"></footer>
+</html>

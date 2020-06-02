@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<center>
+<h3>Modify Customer</h3>
+<p>
+    <a th:href="@{/customers}">
+        <input type="submit" value="Customer List"></h1></a>
+    </a>
+</p>
+<div id="form">
+    <form action="#" th:action="@{/customer/edit}" th:object="${customer}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name Customer:</label>
+            <input type="text" th:field="*{nameCustomer}"/>
+            <td th:if="${#fields.hasErrors('nameCustomer')}" th:errors="*{nameCustomer}">Name Error</td>
+
+        </div>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" th:field="*{birthday}"/>
+            <td th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}">Birthday Error</td>
+
+        </div>
+        <div>
+            <label>Id Card:</label>
+            <input type="text" th:field="*{idCard}"/>
+            <td th:if="${#fields.hasErrors('idCard')}" th:errors="*{idCard}">IdCard Error</td>
+
+        </div>
+        <div>
+            <label>Number Phone:</label>
+            <input type="text" th:field="*{numberPhone}"/>
+            <td th:if="${#fields.hasErrors('numberPhone')}" th:errors="*{numberPhone}">NumberPhone Error</td>
+
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" th:field="*{email}"/>
+            <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</td>
+
+        </div>
+        <div>
+            <label>Address:</label>
+            <input type="text" th:field="*{address}"/>
+            <td th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Address Error</td>
+
+        </div>
+        <div>
+            <label>Type Customer:</label>
+            <!--            <input type="text" th:field="*{address}"/>-->
+            <select th:field="*{typeCustomer}">
+                <option th:each="type:${listType}"
+                        th:value="${type.id}" th:text="${type.nameTypeCustomer}"
+                ></option>
+            </select>
+        </div>
+        <input type="submit" value="Modify"></input>
+    </form>
+</div>
+<footer th:replace="/customer/layout :: footer"></footer>
+</center>
+</body>
+</html>

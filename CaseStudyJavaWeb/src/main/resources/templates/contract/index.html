@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<h3>Contract List</h3>
+<p>
+    <a th:href="@{/contract/create}">
+        <h1><input type="submit" value="Add New Contract"></h1>
+    </a>
+    <a th:href="@{/contracts}"><h1><input type="submit" value="Contract List"></h1></a>
+</p>
+<center>
+    <div class="notify">
+        <div th:if="${message}">
+            <h4><span th:text="${message}"></span></h4>
+        </div>
+    </div>
+</center>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Name Customer</th>
+        <th>Name Service</th>
+        <th>Name Staff</th>
+        <th>Day Start</th>
+        <th>Day End</th>
+        <th>Deposits</th>
+        <th>TotalMoney</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${contracts}">
+        <td th:text="${row.customer.nameCustomer}"></td>
+        <td th:text="${row.service.nameService}"></td>
+        <td th:text="${row.staff.nameStaff}"></td>
+        <td th:text="${row.dayStartContact}"></td>
+        <td th:text="${row.dayEndContact}"></td>
+<!--        <td th:text="${#dates.format(row.dateStartContact,'dd/MM/yyyy')}"></td>-->
+
+        <td th:text="${row.deposits}"></td>
+        <td th:text="${row.totalMoney}"></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{/contracts/(page=${contracts.number - 1})}" th:if="${contracts.hasPrevious()}">Previous</a>
+    <span th:text="${contracts.number + 1}"></span>/<span th:text="${contracts.totalPages}"></span>
+    <a th:href="@{/contracts/(page=${contracts.number + 1})}" th:if="${contracts.hasNext()}">Next</a>
+</div>
+<a th:href="@{/contact/using}">Show Customer Using</a>
+</body>
+<footer th:replace="/customer/layout :: footer"></footer>
+</html>

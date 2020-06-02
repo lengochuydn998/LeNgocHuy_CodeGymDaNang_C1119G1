@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<h3>Customer List</h3>
+<p>
+    <a th:href="@{/customer/create}">
+        <h1><input type="submit" value="Add New Customer"></h1>
+    </a>
+    <a th:href="@{/customers}"><h1><input type="submit" value="Customer List"></h1></a>
+</p>
+<center>
+<div class="notify">
+    <div th:if="${message}">
+        <h4><span th:text="${message}"></span></h4>
+    </div>
+</div>
+</center>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Name Customer</th>
+        <th>Birthday</th>
+        <th>Id Card</th>
+        <th>Number Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Type</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${customers}">
+        <td th:text="${row.nameCustomer}"></td>
+<!--        <td th:text="${row.birthday}"></td>-->
+        <td th:text="${#dates.format(row.birthday,'dd/MM/yyyy')}"></td>
+
+        <td th:text="${row.idCard}"></td>
+        <td th:text="${row.numberPhone}"></td>
+        <td th:text="${row.email}"></td>
+        <td th:text="${row.address}"></td>
+        <td th:text="${row.typeCustomer.nameTypeCustomer}"></td>
+        <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{/customers/(page=${customers.number - 1}, keyword=${keyword})}" th:if="${customers.hasPrevious()}">Previous</a>
+    <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>
+    <a th:href="@{/customers/(page=${customers.number + 1}, keyword=${keyword})}" th:if="${customers.hasNext()}">Next</a>
+</div>
+<form th:action="@{/customers}">
+    <input type="text" name="keyword" style="width: 300px"/>
+    <input type="submit" value="Search"/>
+</form>
+</body>
+<footer th:replace="/customer/layout :: footer"></footer>
+</html>

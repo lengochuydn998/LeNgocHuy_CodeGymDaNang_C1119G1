@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<center>
+<h3>Remove Customer</h3>
+<p>
+    <a th:href="@{/customers}">
+        <h2><input type="submit" value="Back to customer list"></h2>
+    </a>
+</p>
+<div id="form" >
+    <form id="abc" action="#" th:action="@{/customer/delete}" th:object="${customer}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name Customer:</label>
+            <input type="text" th:field="*{nameCustomer}"/>
+        </div>
+        <div>
+            <label>Birthday:</label>
+            <input type="email" th:field="*{birthday}"/>
+        </div>
+        <div>
+            <label>Id Card:</label>
+            <input type="text" th:field="*{idCard}"/>
+        </div>
+        <div>
+            <label>Number Phone:</label>
+            <input type="text" th:field="*{numberPhone}"/>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" th:field="*{email}"/>
+        </div>
+        <div>
+            <label>Address:</label>
+            <input type="text" th:field="*{address}"/>
+        </div>
+        <div>
+            <label>Type Customer:</label>
+            <!--            <input type="text" th:field="*{address}"/>-->
+            <select th:field="*{typeCustomer}">
+                <option th:each="type:${listType}"
+                        th:value="${type.id}" th:text="${type.nameTypeCustomer}"
+                ></option>
+            </select>
+        </div>
+<!--        <input type="submit" value="Remove"></input>-->
+        <input type="button" onclick="isDelete()" value="Delete"/>
+    </form>
+</div>
+<footer th:replace="/customer/layout :: footer"></footer>
+</center>
+</body>
+<script>
+    function isDelete() {
+        if(confirm('Are you sure you want to delete this item?')) {
+            document.getElementById("abc").submit();
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<center>
+<h3>Remove Services</h3>
+<p>
+    <a th:href="@{/services}">
+        <h2><input type="submit" value="Back to service list"></h2>
+    </a>
+</p>
+<div id="form" >
+    <form id="abc" action="#" th:action="@{/service/delete}" th:object="${service}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name Service:</label>
+            <input type="text" th:field="*{nameService}"/>
+        </div>
+        <div>
+            <label>Area:</label>
+            <input type="text" th:field="*{areService}"/>
+        </div>
+        <div>
+            <label>NumberOfFloors:</label>
+            <input type="text" th:field="*{numberOfFloors}"/>
+        </div>
+        <div>
+            <label>NumberOfPeople:</label>
+            <input type="text" th:field="*{numberMaxOfPeoples}"/>
+        </div>
+        <div>
+            <label>Price:</label>
+            <input type="text" th:field="*{priceRent}"/>
+        </div>
+        <div>
+            <label>Status:</label>
+            <input type="text" th:field="*{status}"/>
+        </div>
+        <div>
+            <label>Type Rent:</label>
+            <select th:field="*{typeRent}">
+                <option th:each="type:${listTypeRent}"
+                        th:value="${type.id}" th:text="${type.nameTypeRent}"
+                ></option>
+            </select>
+        </div>
+        <div>
+            <label>Type Service:</label>
+            <select th:field="*{typeService}">
+                <option th:each="type:${listTypeService}"
+                        th:value="${type.id}" th:text="${type.nameTypeService}"
+                ></option>
+            </select>
+        </div>
+<!--        <input type="submit" value="Remove"></input>-->
+        <input type="button" onclick="isDelete()" value="Delete"/>
+    </form>
+</div>
+<footer th:replace="/customer/layout :: footer"></footer>
+</center>
+</body>
+<script>
+    function isDelete() {
+        if(confirm('Are you sure you want to delete this item?')) {
+            document.getElementById("abc").submit();
+        }
+    }
+</script>
+</html>

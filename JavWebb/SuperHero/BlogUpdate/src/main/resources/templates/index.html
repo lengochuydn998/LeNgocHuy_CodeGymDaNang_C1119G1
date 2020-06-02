@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<a th:href="@{/create}">Create New Blog</a>
+<a th:href="@{/}">Back To List Blog</a>
+<table class="table" border="1">
+    <thead class="thead-dark">
+    <tr th:each="cate : ${listsubject}">
+        <th><a th:text="${cate.name_Subject}" th:href="@{/listSubject/__${cate.id}__}"></a></th>
+    </tr>
+    </thead>
+</table>
+<h1>Blog</h1>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<div>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Content</td>
+            <td>Subject</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <th:block th:each="row : ${blogs}">
+            <tr>
+                <td th:text="${row.name}"></td>
+                <td th:text="${row.content}"></td>
+                <td th:text="${row.subject.name_Subject}"></td>
+                <td><a th:href="@{/edit/__${row.id}__}">edit</a></td>
+                <td><a th:href="@{/delete/__${row.id}__}">delete</a></td>
+            </tr>
+        </th:block>
+    </table>
+</div>
+<div>
+    <a th:href="@{/(page=${blogs.number - 1}, keyword=${keyword})}" th:if="${blogs.hasPrevious()}">Previous</a>
+    <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+    <a th:href="@{/(page=${blogs.number + 1}, keyword=${keyword})}" th:if="${blogs.hasNext()}">Next</a>
+</div>
+<form th:action="@{/}">
+    <input type="text" name="keyword" style="width: 100px"/>
+    <input type="submit" value="Search"/>
+</form>
+</body>
+</html>

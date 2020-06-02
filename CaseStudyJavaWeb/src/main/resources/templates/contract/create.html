@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<center>
+    <h3>Add Contract</h3>
+    <p>
+        <a th:href="@{/contracts}">
+            <h2><input type="submit" value="Back to contract list"></h2>
+        </a>
+    </p>
+    <div id="form">
+        <form action="#" th:action="@{/contract/save}" th:object="${contract}"
+              method="POST" novalidate="novalidate">
+            <input type="hidden" th:field="*{id}"/>
+            <div>
+                <label>Name Customer:</label>
+                <!--            <input type="text" th:field="*{address}"/>-->
+                <select th:field="*{customer}">
+                    <option th:each="type:${nameCustomer}"
+                            th:value="${type.id}" th:text="${type.nameCustomer}"
+                    ></option>
+                </select>
+            </div>
+            <div>
+                <label>Name Service:</label>
+                <!--            <input type="text" th:field="*{address}"/>-->
+                <select th:field="*{service}">
+                    <option th:each="type:${nameService}"
+                            th:value="${type.id}" th:text="${type.nameService}"
+                    ></option>
+                </select>
+            </div>
+            <div>
+                <label>Name Staff:</label>
+                <!--            <input type="text" th:field="*{address}"/>-->
+                <select th:field="*{staff}">
+                    <option th:each="type:${nameStaff}"
+                            th:value="${type.id}" th:text="${type.nameStaff}"
+                    ></option>
+                </select>
+            </div>
+            <div>
+                <label>Day Start:</label>
+                <input type="date" th:field="*{dayStartContact}"/>
+            </div>
+            <div>
+                <label>Day End:</label>
+                <input type="date" th:field="*{dayEndContact}"/>
+            </div>
+
+            <div>
+                <label>Deposits:</label>
+                <input type="text" th:field="*{deposits}"/>
+            </div>
+            <div>
+                <label>TotalMoney:</label>
+                <input type="text" th:field="*{totalMoney}"/>
+            </div>
+            <input type="submit" value="Save"></input>
+        </form>
+    </div>
+    <footer th:replace="/customer/layout :: footer"></footer>
+</center>
+</body>
+</html>

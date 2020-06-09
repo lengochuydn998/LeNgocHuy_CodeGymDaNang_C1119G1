@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>My Family</h3>
+<p>
+    <a th:href="@{/create}">
+        <h1><input type="submit" value="Add New Product"></h1>
+    </a>
+    <a th:href="@{/}"><h1><input type="submit" value="My Family"></h1></a>
+
+</p>
+<center>
+    <div class="notify">
+        <div th:if="${message}">
+            <h4><span th:text="${message}"></span></h4>
+        </div>
+    </div>
+</center>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Birthday</th>
+        <th>Id Card</th>
+        <th>Number Phone</th>
+        <th>Job</th>
+        <th>Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${peoples}">
+        <td th:text="${row.name}"></td>
+
+<!--        <td th:text="${row.birthday}"></td>-->
+        <td th:text="${#dates.format(row.birthday,'dd/MM/yyyy')}"></td>
+
+        <td th:text="${row.idCard}"></td>
+        <td th:text="${row.number_Phone}"></td>
+        <td th:text="${row.job}"></td>
+        <td th:text="${row.address.name_address}"></td>
+        <td><a th:href="@{/people/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <!--        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>-->
+        <td><a th:href="@{'/people/delete'(id = ${row.id})}" onclick="if (confirm('Are you sure you want to delete this item?'))
+            {return true} else {event.preventDefault()}">delete</a></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{/(page=${peoples.number - 1}, keyword=${keyword})}" th:if="${peoples.hasPrevious()}">Previous</a>
+    <span th:text="${peoples.number + 1}"></span>/<span th:text="${peoples.totalPages}"></span>
+    <a th:href="@{/(page=${peoples.number + 1}, keyword=${keyword})}" th:if="${peoples.hasNext()}">Next</a>
+</div>
+<form th:action="@{/}">
+    <input type="text" name="keyword" style="width: 300px"/>
+    <input type="submit" value="Search"/>
+</form>
+</body>
+<footer th:replace="/layout :: footer"></footer>
+</html>

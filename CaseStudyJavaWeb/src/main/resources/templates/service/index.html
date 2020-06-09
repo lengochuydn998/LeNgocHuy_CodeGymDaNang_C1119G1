@@ -8,6 +8,7 @@
         <h1><input type="submit" value="Add New Service"></h1>
     </a>
     <a th:href="@{/services}"><h1><input type="submit" value="Service List"></h1></a>
+    <a th:href="@{/service/like}"><h1><input type="submit" value="Show List Service Like"></h1></a>
 </p>
 <center>
 <div class="notify">
@@ -27,8 +28,7 @@
         <th>Type Service</th>
         <th>Price Rent</th>
         <th>Status</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>Love Service</th>
     </tr>
     </thead>
     <tbody>
@@ -41,8 +41,8 @@
         <td th:text="${row.typeService.nameTypeService}"></td>
         <td th:text="${row.priceRent}"></td>
         <td th:text="${row.status}"></td>
-        <td><a th:href="@{/service/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <td><a th:href="@{/service/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/service/like/__${row.id}__}"><img src=https://cdnmedia.baotintuc.vn/Upload/ESSoZh9IeVhxwO8Bh87Q/files/2019/09/nut-like.jpgx
+                                                             style="width: 55px;height: 34px"></a></td>
     </tr>
     </tbody>
 </table>

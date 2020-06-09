@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout :: head"></head>
+<body>
+<h3>Service Like List</h3>
+<p>
+    <a th:href="@{/services}"><h1><input type="submit" value="Service List"></h1></a>
+</p>
+<center>
+    <div class="notify">
+        <div th:if="${message}">
+            <h4><span th:text="${message}"></span></h4>
+        </div>
+    </div>
+</center>
+<table id = "customers">
+    <thead>
+    <tr>
+        <th>Name Service</th>
+        <th>Area</th>
+        <th>Number Of Floors</th>
+        <th>Number Max Of People</th>
+        <th>Type Rent</th>
+        <th>Type Service</th>
+        <th>Price Rent</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${services}">
+        <td th:text="${row.nameService}"></td>
+        <td th:text="${row.areService}"></td>
+        <td th:text="${row.numberOfFloors}"></td>
+        <td th:text="${row.numberMaxOfPeoples}"></td>
+        <td th:text="${row.typeRent.nameTypeRent}"></td>
+        <td th:text="${row.typeService.nameTypeService}"></td>
+        <td th:text="${row.priceRent}"></td>
+        <td th:text="${row.status}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+<footer th:replace="/customer/layout :: footer"></footer>
+</html>

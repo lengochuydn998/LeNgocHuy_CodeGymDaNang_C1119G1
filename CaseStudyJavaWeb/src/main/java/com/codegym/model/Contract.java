@@ -16,6 +16,7 @@ public class Contract {
 
     @OneToOne
     private Service service;
+
     private String dayStartContact;
     private String dayEndContact;
     private String deposits;

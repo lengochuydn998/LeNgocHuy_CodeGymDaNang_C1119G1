@@ -1,12 +1,10 @@
 package com.codegym.controller;
 
-import com.codegym.model.Customer;
-import com.codegym.model.Service;
-import com.codegym.model.TypeRent;
-import com.codegym.model.TypeService;
+import com.codegym.model.*;
 import com.codegym.service.ServiceService;
 import com.codegym.service.TypeRentService;
 import com.codegym.service.TypeServiceService;
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,10 +16,13 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
+@SessionAttributes("serviceLike")
 public class ServiceController {
+
 
     @Autowired
     ServiceService serviceService;
@@ -32,6 +33,11 @@ public class ServiceController {
     @Autowired
     TypeServiceService typeServiceService;
 
+
+    @ModelAttribute("serviceLike")
+    public ServiceLike like() {
+        return new ServiceLike();
+    }
 
     @GetMapping("/services")
     public String index(Model model, @PageableDefault(size=5)Pageable pageable, @RequestParam Optional<String> keyword){
@@ -100,5 +106,16 @@ public class ServiceController {
         serviceService.remove(customer.getId());
         redirect.addFlashAttribute("message","Delete service successfully");
         return "redirect:/services";
+    }
+    @GetMapping("/service/like/{id}")
+    public String likeService(@PathVariable Integer id,Model model,@ModelAttribute("serviceLike")ServiceLike serviceLike,Pageable pageable){
+        serviceLike.addServiceLike(serviceService.findById(id));
+        return "redirect:/services";
+    }
+    @GetMapping("/service/like")
+    public String like (@ModelAttribute("serviceLike") ServiceLike serviceLike , Model model){
+        List<Service> services = serviceLike.getListServiceLike();
+        model.addAttribute("services",services);
+        return "service/like";
     }
 }

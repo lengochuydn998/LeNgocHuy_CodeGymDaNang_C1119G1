@@ -4,10 +4,12 @@
 <body>
 <h3>Customer List</h3>
 <p>
+    <a th:href="@{/}"><h1><input type="submit" value="Home"></h1></a>
     <a th:href="@{/customer/create}">
         <h1><input type="submit" value="Add New Customer"></h1>
     </a>
     <a th:href="@{/customers}"><h1><input type="submit" value="Customer List"></h1></a>
+
 </p>
 <center>
 <div class="notify">
@@ -42,7 +44,10 @@
         <td th:text="${row.address}"></td>
         <td th:text="${row.typeCustomer.nameTypeCustomer}"></td>
         <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>
+<!--        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>-->
+        <td><a th:href="@{'/customer/delete'(id = ${row.id})}" onclick="if (confirm('Are you sure you want to delete this item?'))
+            {return true} else {event.preventDefault()}
+">delete</a></td>
     </tr>
     </tbody>
 </table>

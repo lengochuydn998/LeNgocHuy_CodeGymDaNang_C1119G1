@@ -53,7 +53,7 @@ public class CustomerController {
         }else {
             customerService.save(customer);
             redirect.addFlashAttribute("message","Create new customer successfully");
-            return "redirect:/customers";
+            return "redirect:/";
         }
     }
     @GetMapping("/customer/{id}/edit")
@@ -74,16 +74,21 @@ public class CustomerController {
             return "redirect:/customers";
         }
     }
-    @GetMapping("/customer/{id}/delete")
-    public String delete(@PathVariable Integer id,Model model){
-        model.addAttribute("customer",customerService.findById(id));
-        model.addAttribute("listType",typeCustomerRepository.findAll());
-        return "customer/delete";
-    }
-    @PostMapping("/customer/delete")
-    public String delete(@ModelAttribute(name = "customer")Customer customer,RedirectAttributes redirect){
-        customerService.remove(customer.getId());
-        redirect.addFlashAttribute("message","Delete customer successfully");
+//    @GetMapping("/customer/{id}/delete")
+//    public String delete(@PathVariable Integer id,Model model){
+//        model.addAttribute("customer",customerService.findById(id));
+//        model.addAttribute("listType",typeCustomerRepository.findAll());
+//        return "customer/delete";
+//    }
+//    @PostMapping("/customer/delete")
+//    public String delete(@ModelAttribute(name = "customer")Customer customer,RedirectAttributes redirect){
+//        customerService.remove(customer.getId());
+//        redirect.addFlashAttribute("message","Delete customer successfully");
+//        return "redirect:/customers";
+//    }
+    @GetMapping("/customer/delete")
+    public String delete(@RequestParam(name ="id") Integer id){
+        customerService.remove(id);
         return "redirect:/customers";
     }
 }

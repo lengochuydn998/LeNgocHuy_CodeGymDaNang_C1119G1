@@ -1,0 +1,9 @@
+<ng-container *ngFor="let student of studentList">
+  <!--  <a routerLink="student-detail/{{student.id}}">{{student.name}}</a><br>-->
+  <a [routerLink]="['student-detail', student.id]">{{student.name}}</a>
+  <button (click)="deleteById(student.id)">Delete</button>
+  <br>
+</ng-container>
+<a [routerLink]="['create-student']">Create student</a>
+<router-outlet></router-outlet>
+

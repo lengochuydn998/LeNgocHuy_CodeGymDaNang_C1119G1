@@ -1,0 +1,63 @@
+<<nav class="navbar navbarCustom">
+  <input class="form-control" type="text" name="search" [(ngModel)]="search" placeholder="Search">
+</nav>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">STT</th>
+    <th scope="col">Name</th>
+    <th scope="col">Birthday</th>
+    <th scope="col">Id Card</th>
+    <th scope="col">Number Phone</th>
+    <th scope="col">Email</th>
+    <th scope="col">Address</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let customer of customerList |orderBy:key :false | filter: search
+  | paginate:{id: 'listing_pagination',
+  itemsPerPage: 5,currentPage: page, totalItems: totalRecords} , index as i " >
+  <tr>
+    <td>{{i+1}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.birthday| date:'dd/MM/yyyy'}}</td>
+    <td>{{customer.idCard}}</td>
+    <td>{{customer.numberPhone}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.address}}</td>
+    <td><button type="button" class="btn btn-primary" routerLink="/edit-customer/{{customer.id}}">Edit</button></td>
+<!--    <td><button type="button" class="btn btn-danger" (click)="deleteById(customer.id) ">Delete</button></td>-->
+    <!-- Button trigger modal -->
+    <td>
+    <button type="button" class="btn btn-danger" (click)="showModel(customer)">
+      Delete
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Do you want to delete customer?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger" (click)="deleteById(tempCustomer.id)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </td>
+  </tr>
+  </ng-container>
+  </tbody>
+</table>
+<pagination-controls class="fixed-bottom" style="left: 20%" id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+<router-outlet></router-outlet>

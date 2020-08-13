@@ -1,0 +1,5 @@
+<p>dictionary works!</p>
+<ng-container *ngFor="let dic of dictionary">
+  <a [routerLink]="['dictionary',dic.key]">{{dic.key}}</a>
+</ng-container>
+<router-outlet></router-outlet>

@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="formSignUp">
+  <input placeholder="Email" formControlName="email">
+  <p class="message" *ngIf="formSignUp.get('email').hasError('required') && formSignUp.get('email').touched">Email is required</p>
+  <p [ngClass]="'message'" *ngIf="formSignUp.get('email').hasError('pattern') && formSignUp.get('email').touched">Email is not Format</p>
+
+  <br><br>
+  <input type="password" placeholder="Password" formControlName="password">
+  <br><br>
+  <div formGroupName="subject">
+  <label><input type="checkbox" formControlName="nodeJS" name="NodeJs">NodeJs</label>
+  <label><input type="checkbox" formControlName="angular" name="Angular">Angular</label>
+  <label><input type="checkbox" formControlName="reactJS" name="ReactJs">ReactJs</label>
+  </div>
+    <br><br>
+  <button [disabled]="formSignUp.invalid" >Submit</button>
+</form>

@@ -1,0 +1,119 @@
+body{
+    font-family: Tahoma;
+    font-size: 13px;
+    margin: 0 auto;
+}
+#header {
+    height: 250px;
+    color: aliceblue;
+}
+#header-link{
+    background: black;
+    height: 50px;
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+#header-link :hover{
+    background: #FFFFFF;
+    color: black;
+}
+#main #left {
+    width: 15%;
+    float: left;
+    min-height: 400px;
+}
+#main #right {
+    width: 85%;
+    float: left;
+    min-height: 400px;
+}
+#footer{
+    background: hotpink;
+    height: 60px;
+    color: #FFFFFF;
+    clear: both;
+    line-height: 60px;
+    text-align: center;
+}
+#header-link ul {
+    margin: 0;
+    padding: 0;
+}
+#header-link ul li {
+    list-style: none;
+    float: left;
+}
+#header-link ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    line-height: 50px;
+    padding: 0 70px 0 60px;
+    border-right: 1px solid #f1f1f1;
+
+}
+#header-link ul li a.active{
+    background: orange;
+}
+#img {
+    height: 100%;
+    width: 100%;
+}
+#main #right ul {
+    margin: 0;
+    padding: 0;
+}
+#main #right ul li {
+    list-style: none;
+}
+#main #right ul{
+    float: left;
+    margin: 0 20px 5px 10px;
+    text-align: center;
+}
+#main #right ul li h3 a {
+    list-style: none;
+    margin-top: 0;
+    text-decoration: none;
+}
+#main #right ul li h3{
+    margin-top: 0;
+}
+#main #right ul li h3 :hover{
+    color: orange;
+}
+#main{
+    margin-top: 10px;
+}
+#main #left .menu-left ul{
+    margin-top: -16px;
+    padding: 0;
+    border: 1px solid #ccc;
+}
+#main #left .menu-left ul li {
+    list-style: none;
+}
+#main #left .menu-left ul li a{
+    display: block;
+    text-decoration: none;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 1px solid darkorange;
+    margin-top: 0;
+    color: #878787;
+}
+#main #left .menu-left ul li a:hover{
+    color: orange;
+}
+#main #left .menu-left h3 {
+    background: red;
+    height: 40px;
+    text-align: center;
+    margin-top: 0;
+    line-height: 40px;
+    color: #f1f1f1;
+}
+#main #right ul li img {
+    border: 3px solid blueviolet;
+}

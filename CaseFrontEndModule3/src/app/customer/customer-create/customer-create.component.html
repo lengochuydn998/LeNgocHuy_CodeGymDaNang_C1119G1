@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+<form (ngSubmit)="onSubmit()" [formGroup]="customerForm">
+  <div class="form-group row">
+    <label class="col">
+      Name
+      <input type="name" class="form-control" formControlName="name">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="customerForm.get('name').hasError('required') && customerForm.get('name').touched">
+    Invalid Name!
+  </div>
+<!--  <div class="alert alert-danger" role="alert" *ngIf="registerForm.get('email').invalid && registerForm.get('email').touched">-->
+<!--    Invalid email!-->
+<!--  </div>-->
+  <div class="form-group row">
+    <label class="col">
+      Birthday
+<!--      <input   type="date"  class="form-control" formControlName="birthday">-->
+      <mat-form-field>
+        <input  [min]="minDate" [max]="maxDate" readonly formControlName="birthday" matInput [matDatepicker]="myPicker">
+        <mat-datepicker-toggle  matSuffix [for]="myPicker"></mat-datepicker-toggle>
+        <mat-datepicker #myPicker></mat-datepicker>
+      </mat-form-field>
+    </label>
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Id Card
+      <input type="text" class="form-control" formControlName="idCard">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="customerForm.get('idCard').hasError('required') && customerForm.get('idCard').touched">
+    ID Card is required
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="customerForm.get('idCard').hasError('pattern') && customerForm.get('idCard').touched">
+  Number Phone is not format
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Number Phone
+      <input type="text" class="form-control" formControlName="numberPhone">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="customerForm.get('numberPhone').hasError('required') && customerForm.get('numberPhone').touched">
+    Number Phone is required
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="customerForm.get('numberPhone').hasError('pattern') && customerForm.get('numberPhone').touched">
+    Number Phone is not format
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Email
+      <input type="text" class="form-control" formControlName="email">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="customerForm.get('email').hasError('required') && customerForm.get('email').touched">
+    Email is required
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="customerForm.get('email').hasError('email') && customerForm.get('email').touched">
+  Email is not format
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Address
+      <input type="text" class="form-control" formControlName="address">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="customerForm.get('address').invalid && customerForm.get('address').touched">
+    Address is required!
+  </div>
+  <div class="form-group">
+    <button class="btn btn-info" type="submit">Register</button>
+  </div>
+</form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<p>student-list works!</p>
+<ng-container *ngFor="let student of studentLis">
+  <!--  <a routerLink="student-detail/{{student.id}}">{{student.name}}</a><br>-->
+  <a [routerLink]="['student-detail', student.id]">{{student.name}}</a>
+  <button (click)="goDetail(student.id)">{{student.name}}</button>
+</ng-container>
+<router-outlet></router-outlet>

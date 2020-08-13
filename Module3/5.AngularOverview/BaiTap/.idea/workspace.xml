@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="45abc19a-6044-4dfc-bcd1-31818e143c84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../CaseFrontEndModule3/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseFrontEndModule3/src/app/employee/employee.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudyJavaWeb.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudyModule3/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudyModule3/src/app/student-page/create-student/create-student.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudyModule3/src/app/student-page/create-student/create-student.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudyModule3/src/app/student-page/create-student/create-student.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/Module3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/.idea/BaiTap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/read-the-story/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/read-the-story/ec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/read-the-story/img/Capture.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/read-the-story/img/header.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/read-the-story/img/kiss-x-death.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/BaiTap/read-the-story/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/ThucHanh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/ThucHanh/.idea/ThucHanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/ThucHanh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/ThucHanh/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/ThucHanh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/ThucHanh/header-footer/header-footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/ThucHanh/simple-layout/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1.Css/ThucHanh/simple-layout/simple-layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/BapTap/galerry/custom-galerry.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/BapTap/galerry/galerry.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/BapTap/landing-page/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/BapTap/landing-page/microsoft.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/.idea/ThucHanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/layout-bootStrap/custom-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/layout-bootStrap/img/103217162_181800423248338_1507838588671345947_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/layout-bootStrap/img/img-header.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2.BootStrap/ThucHanh/layout-bootStrap/shopping.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Jquery/BaiTap/draggable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Jquery/BaiTap/droppable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Jquery/ThucHanh/Button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Jquery/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.TypeScript/ThucHanh/dk-vonglap.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.TypeScript/ThucHanh/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.TypeScript/ThucHanh/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/calculator/calculator.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/calculator/calculator.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/calculator/calculator.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/calculator/calculator.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/color-picker/color-picker.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/color-picker/color-picker.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/color-picker/color-picker.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/color-picker/color-picker.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/dictionary-page/dictionary-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/font-size/font-size.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/font-size/font-size.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/font-size/font-size.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/font-size/font-size.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/pet/pet.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/pet/pet.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/pet/pet.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/pet/pet.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/test/test.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/test/test.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/test/test.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/app/test/test.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/assets/84614827_167282914722471_7279607483797078016_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../css-bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../css-bootstrap/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../css-bootstrap/jquery-3.5.1.min.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1e1GewC2KLUthJ29i55zOHqa6pe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45abc19a-6044-4dfc-bcd1-31818e143c84" name="Default Changelist" comment="" />
+      <created>1593481784148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593481784148</updated>
+      <workItem from="1593481785449" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

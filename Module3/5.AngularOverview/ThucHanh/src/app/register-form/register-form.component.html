@@ -1,0 +1,65 @@
+<h2 class="text-center">User registration</h2>
+<div class="container">
+<form (ngSubmit)="onsubmit()" [formGroup]="registerForm">
+  Email
+  <br>
+  <input placeholder="Email" formControlName="email">
+  <p *ngIf="registerForm.get('email').hasError('required') && registerForm.get('email').touched">Không Bỏ Trống</p>
+  <p *ngIf="registerForm.get('email').hasError('email') && registerForm.get('email').touched">Không đúng định dạng</p>
+  <br>
+  <div formGroupName="pwGroup">
+    Password:
+    <br>
+    <input formControlName="password" type="password">
+    <p *ngIf="registerForm.get('pwGroup.password').hasError('minlength') && registerForm.get('pwGroup.password').touched">Min length 6</p>
+    <br><br>
+    Confirm Password
+    <br>
+    <input type="password" formControlName="confirmPassword">
+    <p *ngIf="registerForm.get('pwGroup.confirmPassword').hasError('minlength') && registerForm.get('pwGroup.confirmPassword').touched">Min length 6</p>
+
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="registerForm.hasError('passwordNoMath', ['pwGroup']) &&
+      registerForm.get('pwGroup').touched">
+    Password does not match!
+  </div>
+  <br>
+  <br>
+  <label class="col">
+    Country
+    <select formControlName="country">
+      <option value="">Chọn</option>
+      <option value="vn">Việt Nam</option>
+      <option value="us">US</option>
+    </select>
+  </label>
+  <p *ngIf="registerForm.get('country').invalid && registerForm.get('country').touched">Country is required</p>
+  <br>
+  <br>
+  Age:
+  <br>
+  <input placeholder="Age" formControlName="age">
+  <p *ngIf="registerForm.get('age').invalid && registerForm.get('age').touched">You have to be over 18 to register an account</p>
+  <div class="form-group row">
+    <div class="col">
+      Gender
+      <label><input type="radio" formControlName="gender" value="male">Male</label>
+      <label><input type="radio" formControlName="gender" value="female">Female</label>
+    </div>
+  </div>
+  <p *ngIf="registerForm.get('gender').invalid && registerForm.get('gender').touched">Gender is required</p>
+  <br>
+  Phone:
+  <br>
+  <input placeholder="Phone" formControlName="phone">
+  <p *ngIf="registerForm.get('phone').hasError('required') && registerForm.get('phone').touched">Gender is required</p>
+  <p *ngIf="registerForm.get('phone').hasError('pattern') && registerForm.get('phone').touched">Phone must start with +84 followed by 9 or 10 digits.</p>
+  <br>
+  <br>
+  <button class="btn btn-info" type="submit">Submit</button>
+</form>
+</div>
+<pre>
+{{ registerForm.value | json}}
+</pre>
+

@@ -1,0 +1,65 @@
+<!--<input placeholder="input name" (keyup)="showEvent($event)">-->
+<!--<input placeholder="input name" [(ngModel)]="name">-->
+<!--<h3>Your name is: {{name}}</h3>-->
+
+<!--<img [hidden]="forgot" src="{{imgUrl}}" alt="">-->
+<!--&lt;!&ndash;<img [src]="imgUrl" alt="">&ndash;&gt;-->
+
+<!--<button (click)="toggleForgot()">Toggle forgot</button>-->
+<!--&lt;!&ndash;<button (click)="forgot=!forgot">Toggle forgot</button>&ndash;&gt;-->
+
+<!--Template reference variable-->
+<!--<input placeholder="input name" [(ngModel)]="name" #txtUsername>-->
+<!--<h3>Your name is: {{name}}</h3>-->
+<!--<code>{{txtUsername.value}}</code>-->
+
+<!--Style binding và class binding-->
+<!--<br>-->
+<!--<input placeholder="input" [(ngModel)]="name">-->
+<!--<h3 [style.color]=" name.length%2 === 0 ? 'red' : 'blue' "> Your name is:{{name}}</h3>-->
+<!--<h3 [style.color]=" isHighLight ? 'red' : 'blue' "> Your name is:{{name}}</h3>-->
+
+<!--<div [class]=" isHighLight?'square':'circle'"></div>-->
+
+<!--ngStyle -->
+<!--<h3 [ngStyle]="name.length % 2 ===0 ?evenStyle : oddStyle">-->
+<!--  Your name is : {{name}}-->
+<!--</h3>-->
+
+<!--ngClass-->
+<!--<div [ngClass]="circle: !isHighlight,square: isHighlight"></div>-->
+<!--<div [ngClass]="currentClass"></div>-->
+
+<!--<p *ngIf="isShow">-->
+<!--  HungNguLon-->
+<!--</p>-->
+<!--<button (click)="isShow =!isShow"> Toggle Ng If </button>-->
+
+<!--<ul>-->
+<!--  <li *ngFor="let hung of arrHung">-->
+<!--    {{ hung }}-->
+<!--  </li>-->
+<!--</ul>-->
+<div *ngIf="isShowForm">
+  <input placeholder="English" [(ngModel)]="newEn">
+  <input placeholder="VietNamese" [(ngModel)]="newVn">
+  <br><br>
+  <button (click)="addWord()">Thêm từ mới</button>
+</div>
+<button (click)="isShowForm = true" *ngIf="!isShowForm">Thêm từ mới</button>
+<br><br>
+<select [(ngModel)]="filterStatus">
+  <option value="xem_tat_ca">Xem tất cả</option>
+  <option value="xem_da_nho">Xem đã nhớ</option>
+  <option value="xem_chua_nho">Xem chưa nhớ</option>
+</select>
+<div *ngFor="let word of arrWords">
+  <div class="word" *ngIf="status(word.memorized)">
+  <h4 [ngStyle]="{color:word.memorized? 'blue' : 'red' }">{{word.en}}</h4>
+  <p>{{word.vn}}</p>
+  <button (click)="delete(word.id)">Xóa</button>
+  <button (click)="word.memorized = !word.memorized">
+    {{word.memorized?'chưa nhớ': 'đã nhớ'}}
+  </button>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<ng-container *ngFor="let dic of dictionary">
+  <a [routerLink]="['dictionary-detail', dic.en]">{{dic.en}}</a>
+</ng-container>
+<router-outlet></router-outlet>

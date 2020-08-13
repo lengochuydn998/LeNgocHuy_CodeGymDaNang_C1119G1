@@ -1,0 +1,131 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+<form (ngSubmit)="onSubmit()" [formGroup]="employeeEditForm">
+  <div class="form-group row">
+    <label class="col">
+      Name
+      <input type="name" class="form-control" formControlName="name">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('name').hasError('required') && employeeEditForm.get('name').touched">
+    Invalid Name!
+  </div>
+  <!--  <div class="alert alert-danger" role="alert" *ngIf="registerForm.get('email').invalid && registerForm.get('email').touched">-->
+  <!--    Invalid email!-->
+  <!--  </div>-->
+  <div class="form-group row">
+    <label class="col">
+      Birthday
+      <mat-form-field>
+        <input [min]="minDate" [max]="maxDate" readonly formControlName="birthday" matInput [matDatepicker]="myPicker">
+        <mat-datepicker-toggle  matSuffix [for]="myPicker"></mat-datepicker-toggle>
+        <mat-datepicker #myPicker></mat-datepicker>
+      </mat-form-field>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('birthday').hasError('required') && employeeEditForm.get('birthday').touched">
+    Is not required
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Id Card
+      <input type="text" class="form-control" formControlName="idCard">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('idCard').hasError('required') && employeeEditForm.get('idCard').touched">
+    ID Card is required
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('idCard').hasError('pattern') && employeeEditForm.get('idCard').touched">
+    Id card is not format
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Salary
+      <input type="text" class="form-control" formControlName="salary">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('salary').hasError('required') && employeeEditForm.get('salary').touched">
+    Salary is required
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Number Phone
+      <input type="text" class="form-control" formControlName="numberPhone">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('numberPhone').hasError('required') && employeeEditForm.get('numberPhone').touched">
+    Number Phone is required
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('numberPhone').hasError('pattern') && employeeEditForm.get('numberPhone').touched">
+    Number Phone is not format
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Email
+      <input type="text" class="form-control" formControlName="email">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('email').hasError('required') && employeeEditForm.get('email').touched">
+    Email is required
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('email').hasError('email') && employeeEditForm.get('email').touched">
+    Email is not format
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Address
+      <input type="text" class="form-control" formControlName="address">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('address').invalid && employeeEditForm.get('address').touched">
+    Address is required!
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Pos
+      <select formControlName="pos" class="form-control">
+        <option value="nhân viên">Nhân Viên</option>
+        <option value="quản lý">Quản lý</option>
+        <option value="phục vụ">Phục vụ</option>
+      </select>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('pos').hasError('required') && employeeEditForm.get('pos').touched">
+    Is not required
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Level
+      <select formControlName="level" class="form-control">
+        <option value="cao đẳng">Cao đẳng</option>
+        <option value="đại học">Đại học</option>
+        <option value="sau đại học">Sau đại học</option>
+      </select>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('level').hasError('required') && employeeEditForm.get('level').touched">
+    Is not required
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Part
+      <select formControlName="part" class="form-control">
+        <option value="giám đốc">Giám đốc</option>
+        <option value="trưởng phòng">Trưởng phòng</option>
+        <option value="bảo vệ">Bảo vệ</option>
+      </select>
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="employeeEditForm.get('part').hasError('required') && employeeEditForm.get('part').touched">
+    Is not required
+  </div>
+  <div class="form-group">
+    <button class="btn btn-info" type="submit">Edit</button>
+  </div>
+</form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

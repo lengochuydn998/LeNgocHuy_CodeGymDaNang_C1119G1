@@ -1,0 +1,124 @@
+{
+  "customerList": [
+    {
+      "id": 28,
+      "name": "Huỳnh Thị Diệu Huyền",
+      "birthday": "2020-06-20T17:00:00.000Z",
+      "idCard": "123456789",
+      "numberPhone": "0901915610",
+      "email": "lengochuydn@gmail.com",
+      "address": "Buôn Mê Thuật"
+    },
+    {
+      "id": 29,
+      "name": "Lê Ngọc Huy",
+      "birthday": "1998-08-20T17:00:00.000Z",
+      "idCard": "201483824",
+      "numberPhone": "0905984188",
+      "email": "lengochuydn998@gmail.com",
+      "address": "Đà Nẵng"
+    }
+  ],
+  "typeCustomer": [
+    {
+      "id": 1,
+      "nameTypeCustomer": "Diamond"
+    },
+    {
+      "id": 2,
+      "nameTypeCustomer": "Platinum"
+    },
+    {
+      "id": 3,
+      "nameTypeCustomer": "Gold"
+    },
+    {
+      "id": 4,
+      "nameTypeCustomer": "Sliver"
+    },
+    {
+      "id": 5,
+      "nameTypeCustomer": "Member"
+    }
+  ],
+  "typeRent": [
+    {
+      "id": 1,
+      "nameTypeRent": "Hour"
+    },
+    {
+      "id": 2,
+      "nameTypeRent": "Day"
+    },
+    {
+      "id": 3,
+      "nameTypeRent": "Month"
+    }
+  ],
+  "employee": [
+    {
+      "id": 4,
+      "name": "Lê Ngọc Huy",
+      "birthday": "2002-12-30T17:00:00.000Z",
+      "salary": "1",
+      "idCard": "123123123",
+      "numberPhone": "0900000000",
+      "email": "lengochuy@gmail.com",
+      "address": "123",
+      "pos": "nhân viên",
+      "level": "cao đẳng",
+      "part": "giám đốc"
+    },
+    {
+      "id": 5,
+      "name": "1",
+      "birthday": "2002-12-30T17:00:00.000Z",
+      "salary": "1",
+      "idCard": "123123123",
+      "numberPhone": "0912312312",
+      "email": "123@gmail.com",
+      "address": "123",
+      "pos": "nhân viên",
+      "level": "cao đẳng",
+      "part": "trưởng phòng"
+    }
+  ],
+  "students": [
+    {
+      "id": 1004,
+      "ten_sinh_vien": "Nguyễn Phi Sơn",
+      "ten_nhom": "nhóm 2",
+      "ten_de_tai": "bảo mật website bằng Laravel",
+      "giao_vien_huong_dan": "Doãn Bá Hùng",
+      "email": "phison@gmail.com",
+      "so_dien_thoai": "0903994332"
+    },
+    {
+      "id": 1005,
+      "ten_sinh_vien": "Lê Hoàng Quốc Anh",
+      "ten_nhom": "nhóm 3",
+      "ten_de_tai": "Sử dụng Azure Microsoft để xây dựng webservice ",
+      "giao_vien_huong_dan": "Hoàng Thanh Sơn",
+      "email": "quocanh@gmail.com",
+      "so_dien_thoai": "0934456024"
+    },
+    {
+      "id": 1006,
+      "ten_sinh_vien": "Nguyễn Lê Trần Nam",
+      "ten_nhom": "nhóm 1",
+      "ten_de_tai": "xây dựng website bằng spring mvc",
+      "giao_vien_huong_dan": "Trần Hoàng Nam",
+      "email": "trannam@gmail.com",
+      "so_dien_thoai": "0977893022"
+    },
+    {
+      "id": 1007,
+      "ten_sinh_vien": "Nguyễn Lê Hoài",
+      "ten_nhom": "nhóm 1",
+      "ten_de_tai": "bảo mật website bằng Laravel",
+      "giao_vien_huong_dan": "Doãn Bá Hùng",
+      "email": "hoaian@gmail.com",
+      "so_dien_thoai": "0935123456"
+    }
+  ]
+}

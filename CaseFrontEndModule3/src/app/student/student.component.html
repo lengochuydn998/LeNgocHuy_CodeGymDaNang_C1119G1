@@ -1,0 +1,59 @@
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">STT</th>
+    <th scope="col">Mã Sinh Viên</th>
+    <th scope="col">Tên Sinh Viên</th>
+    <th scope="col">Tên Nhóm</th>
+    <th scope="col">Tên Đề Tài</th>
+    <th scope="col">Gv Hướng Dẫn</th>
+    <th scope="col">Email</th>
+    <th scope="col">Số Điện Thoại</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let student of studentList |orderBy:key :false | filter: search, index as i " >
+    <tr>
+      <td>{{i+1}}</td>
+      <td>{{student.id}}</td>
+      <td>{{student.ten_sinh_vien}}</td>
+      <td>{{student.ten_nhom}}</td>
+      <td>{{student.ten_de_tai}}</td>
+      <td>{{student.giao_vien_huong_dan}}</td>
+      <td>{{student.email}}</td>
+      <td>{{student.so_dien_thoai}}</td>
+      <td><button type="button" class="btn btn-warning" routerLink="/edit-student/{{student.id}}">Edit</button></td>
+      <!-- Button trigger modal -->
+      <td>
+        <button type="button" class="btn btn-danger" (click)="showModel(student)">
+          Delete
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Do you want to delete employee?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" (click)="deleteById(tempStudent.id)">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>
+<router-outlet></router-outlet>

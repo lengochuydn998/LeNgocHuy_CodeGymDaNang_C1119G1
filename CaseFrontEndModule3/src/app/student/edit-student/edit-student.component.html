@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <form (ngSubmit)="onSubmit()" [formGroup]="studentEditForm">
+        <div class="form-group row">
+          <label class="col">
+            Mã sinh viên
+            <input  readonly type="name" class="form-control" formControlName="id">
+          </label>
+        </div>
+        <div class="form-group row">
+          <label class="col">
+            Name
+            <input type="name" class="form-control" formControlName="ten_sinh_vien">
+          </label>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="studentEditForm.get('ten_sinh_vien').hasError('pattern') && studentEditForm.get('ten_sinh_vien').touched">
+          Tên không chứa kí tự đặt biệt
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="studentEditForm.get('ten_sinh_vien').hasError('required') && studentEditForm.get('ten_sinh_vien').touched">
+          Tên không được bỏ trống
+        </div>
+        <div class="form-group row">
+          <label class="col">
+            Tên Nhóm
+            <select formControlName="ten_nhom" class="form-control">
+              <option value="nhóm 1">Nhóm 1</option>
+              <option value="nhóm 2">Nhóm 2</option>
+              <option value="nhóm 3">Nhóm 3</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-group row">
+          <label class="col">
+            Tên Đề Tài
+            <input type="name" class="form-control" formControlName="ten_de_tai">
+          </label>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="studentEditForm.get('ten_de_tai').hasError('required') && studentEditForm.get('ten_de_tai').touched">
+          Tên đề tài không được bỏ trống
+        </div>
+
+        <div class="form-group row">
+          <label class="col">
+            Tên Giáo Viên
+            <select formControlName="giao_vien_huong_dan" class="form-control">
+              <option value="Doãn Bá Hùng">Doãn Bá Hùng</option>
+              <option value="Trần Hoàng Nam">Trần Hoàng Nam</option>
+              <option value="Hoàng Thanh Sơn">Hoàng Thanh Sơn</option>
+            </select>
+          </label>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="studentEditForm.get('giao_vien_huong_dan').hasError('required') && studentEditForm.get('giao_vien_huong_dan').touched">
+          Tên giáo viên không được bỏ trống
+        </div>
+
+
+        <div class="form-group row">
+          <label class="col">
+            Email
+            <input type="text" class="form-control" formControlName="email">
+          </label>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="studentEditForm.get('email').hasError('required') && studentEditForm.get('email').touched">
+          Email không được bỏ trống !!!
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="studentEditForm.get('email').hasError('pattern') && studentEditForm.get('email').touched">
+          Email không đúng định dạng (abc@gmail.com)
+        </div>
+
+        <div class="form-group row">
+          <label class="col">
+            Số Điện Thoại
+            <input type="text" class="form-control" formControlName="so_dien_thoai">
+          </label>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="studentEditForm.get('so_dien_thoai').hasError('pattern') && studentEditForm.get('so_dien_thoai').touched">
+          Số điện thoại không đúng định dạng, số điện thoại phải gồm 10 hoặc 12 số !!!
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="studentEditForm.get('so_dien_thoai').hasError('required') && studentEditForm.get('so_dien_thoai').touched">
+          Số điện thoại không được bỏ trống !!!
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-info" type="submit">Sửa</button>
+          <button class="btn btn-info customThoat" type="submit" (click)="removelist()">Thoát</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
